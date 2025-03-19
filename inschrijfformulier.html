@@ -1,1 +1,83 @@
 <!Doctype html>
+<html lang="NL-BE">
+<head>
+    <title>
+        inschrijfformulier
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ugent.css">
+</head>
+<body>
+<header>
+    <h1>Trip naar Krk/Selce in Kroatië ~ Wannes Waelput</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">index</a></li>
+            <li><a href="inschrijfformulier.html">inschrijfformulier</a> </li>
+            <li><a href="#paklijst">Paklijst</a> </li>
+        </ul>
+    </nav>
+
+ 
+    
+    <figure>
+            <a href="https://www.tripadvisor.be/Attractions-g303824-Activities-Krk_Island_Kvarner_Bay_Islands_Primorje_Gorski_Kotar_County.html">
+            <img src="media/krk_strand.webp" alt="strand krk">
+            </a>
+            <figcaption><strong>Een krk strand</strong></figcaption>
+    </figure>
+</header>
+
+    <form action="https://formspree.io/f/myzekppr" method="post">
+        <fieldset>
+            <legend>Persoonlijke Gegevens</legend>
+            <label>
+                Your email:
+                <input type="email" id="email" name="email" placeholder="wannes.waelput@ugent.be">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label><br><br>
+            <label for="naam">Naam:</label>
+            <input id="naam" name="naam" placeholder="Bvb:Wannes Waelput"><br><br>
+
+            <label for="telefoon" >Telefoonnummer:</label>
+            <input type="tel" id="telefoon" name="telefoon" required><br><br>
+
+            <label>Geslacht:</label>
+            <input type="radio" id="man" name="geslacht" value="man" >
+            <label>Man</label>
+            <input type="radio" id="vrouw" name="geslacht" value="vrouw" >
+            <label>Vrouw</label>
+            <br><br>
+
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum" ><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback over het reisschema</legend>
+            <label>Wat vond je de leukste wateractiviteit?</label>
+            <select name="activiteit">
+                <option value="bootje_varen" name="activiteit">bootje varen</option>
+                <option value="parasailen" name="activiteit">parasailen</option>
+                <option value="zwemmen" name="activiteit">zwemmen</option>
+                
+            </select><br><br>
+
+            <label for="feedback">Jouw feedback:</label><br>
+            <textarea id="feedback" name="feedback"></textarea><br><br>
+        </fieldset>
+
+        <input type="reset" value="reset" name="reset">
+        <button type="submit">send</button>
+        
+     </form>
+
+<footer>
+        <p>Wannes Waelput</p>
+        <p><time datetime="2024-03-09">9 maart 2025</time></p>
+</footer>
+</body>  
+</html>
